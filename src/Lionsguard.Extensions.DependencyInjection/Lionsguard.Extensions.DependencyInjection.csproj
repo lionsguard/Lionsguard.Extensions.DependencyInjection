@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Cameron Albert</Authors>
+    <Company>Lionsguard Technologies, LLC</Company>
+    <Description>Extensions methods for adding and using dependency injection services with a key.</Description>
+    <Copyright>2018 Cameron Albert</Copyright>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/lionsguard/Lionsguard.Extensions.DependencyInjection/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/lionsguard/Lionsguard.Extensions.DependencyInjection</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/lionsguard/Lionsguard.Extensions.DependencyInjection</PackageProjectUrl>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageTags>#depedencyinjection</PackageTags>
+    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>
