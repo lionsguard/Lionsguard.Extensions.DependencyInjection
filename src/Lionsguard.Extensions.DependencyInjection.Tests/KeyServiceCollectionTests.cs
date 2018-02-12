@@ -7,7 +7,7 @@ namespace Lionsguard.Extensions.DependencyInjection.Tests
     public class KeyServiceCollectionTests
     {
         [TestMethod]
-        public void StringKeyServiceCollectionTest()
+        public void StringKeyTest()
         {
             var services = new ServiceCollection()
                 .AddTransientKeyServices<string, IStringKeyService>(builder =>
@@ -20,6 +20,19 @@ namespace Lionsguard.Extensions.DependencyInjection.Tests
 
             var expected = "B";
             var actual = services.GetService<string, IStringKeyService>(expected).GetValue();
+            Assert.IsTrue(actual == expected, "Expected Value = '{0}', Actual Value = '{1}'", expected, actual);
+        }
+
+        [TestMethod]
+        public void ReflectionKeyServiceTest()
+        {
+            var services = new ServiceCollection()
+                .AddKeyServicesWithReflection<string, IStringKeyService>(ServiceLifetime.Transient)
+                .BuildServiceProvider();
+
+            var service = services.GetService<string, IStringKeyService>("D"); // C and D share the same object
+            var expected = "C";
+            var actual = service.GetValue();
             Assert.IsTrue(actual == expected, "Expected Value = '{0}', Actual Value = '{1}'", expected, actual);
         }
     }

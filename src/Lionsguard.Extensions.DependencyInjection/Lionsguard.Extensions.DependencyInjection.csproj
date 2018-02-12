@@ -11,8 +11,9 @@
     <PackageProjectUrl>https://github.com/lionsguard/Lionsguard.Extensions.DependencyInjection</PackageProjectUrl>
     <RepositoryType>GIT</RepositoryType>
     <PackageTags>#depedencyinjection</PackageTags>
-    <PackageReleaseNotes>Initial release.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added KeyServiceAttribute and reflection based service creation.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
