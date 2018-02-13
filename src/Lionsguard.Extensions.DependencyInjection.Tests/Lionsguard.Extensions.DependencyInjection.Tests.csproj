@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Lionsguard.Extensions.DependencyInjection.TestLib\Lionsguard.Extensions.DependencyInjection.TestLib.csproj" />
     <ProjectReference Include="..\Lionsguard.Extensions.DependencyInjection\Lionsguard.Extensions.DependencyInjection.csproj" />
   </ItemGroup>
 

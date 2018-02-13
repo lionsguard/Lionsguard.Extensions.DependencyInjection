@@ -1,5 +1,6 @@
 ﻿using Lionsguard.Extensions.DependencyInjection;
 using System;
+using System.Linq;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -16,7 +17,8 @@ namespace Microsoft.Extensions.DependencyInjection
         public static TService GetService<TKey, TService>(this IServiceProvider services, TKey key)
             where TService : class
         {
-            var collection = services.GetService<KeyServiceCollection<TKey, TService>>();
+            var collections = services.GetServices<KeyServiceCollection<TKey, TService>>();
+            var collection = collections?.FirstOrDefault(o => o.ContainsKey(key));
             return collection?.GetService(key);
         }
     }

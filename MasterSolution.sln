@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lionsguard.Extensions.DependencyInjection", "src\Lionsguard.Extensions.DependencyInjection\Lionsguard.Extensions.DependencyInjection.csproj", "{F99D38D8-4BA7-48B1-9514-CF305284E6EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lionsguard.Extensions.DependencyInjection", "src\Lionsguard.Extensions.DependencyInjection\Lionsguard.Extensions.DependencyInjection.csproj", "{F99D38D8-4BA7-48B1-9514-CF305284E6EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lionsguard.Extensions.DependencyInjection.Tests", "src\Lionsguard.Extensions.DependencyInjection.Tests\Lionsguard.Extensions.DependencyInjection.Tests.csproj", "{FDE7837B-0B05-4C3E-BCF9-61F6E7792AB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lionsguard.Extensions.DependencyInjection.Tests", "src\Lionsguard.Extensions.DependencyInjection.Tests\Lionsguard.Extensions.DependencyInjection.Tests.csproj", "{FDE7837B-0B05-4C3E-BCF9-61F6E7792AB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lionsguard.Extensions.DependencyInjection.TestLib", "Lionsguard.Extensions.DependencyInjection.TestLib\Lionsguard.Extensions.DependencyInjection.TestLib.csproj", "{6DBA4E7C-7789-4272-8D03-6F8E9D871DA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FDE7837B-0B05-4C3E-BCF9-61F6E7792AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDE7837B-0B05-4C3E-BCF9-61F6E7792AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDE7837B-0B05-4C3E-BCF9-61F6E7792AB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DBA4E7C-7789-4272-8D03-6F8E9D871DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DBA4E7C-7789-4272-8D03-6F8E9D871DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DBA4E7C-7789-4272-8D03-6F8E9D871DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DBA4E7C-7789-4272-8D03-6F8E9D871DA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
